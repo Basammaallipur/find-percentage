@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #a
+        {
+            background-color:pink;
+            border:10px DOUBLE black ;
+            border-radius:20px;
+            color:brown;
+            padding-left:30%;
+        }
+        div
+        {
+            padding: 10px;
+            background-color:gold;
+            border:5px double black;
+            border-radius:20px; 
+            color:red;
+            margin:25%;
+            margin-top:10%;
+            margin-right: 35%;
+
+    
+        }
+        #aa
+        {
+            cursor: pointer;
+            transition:3s;
+            opacity:0.5;
+            color:red;
+            background-color:green;
+            font-size:15px;
+            border-radius:20px;
+        }
+        .m
+        {
+            color:red;
+            font-size:20px;
+            font-weight:bolder;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color:greenyellow;
+        }
+        .z
+        {
+            color:red;
+            font-size:20px;
+            font-weight:bolder;
+            border-radius: 5px;
+            background-color:thistle ;
+            border: 2px solid black;
+        }
+        .p
+        {
+            color:red;
+            font-size:20px;
+            font-weight:bolder;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color:gray;
+        }
+        .b
+        {
+           color:red;
+           background-color:darkgreen;
+           border-radius:10px;
+           background-color:thistle ;
+           border: 2px solid black;
+        }
+        body
+        {
+            background-image: url(cal.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:900px;
+        }
+        
+   </style>
+</head>
+<body>
+  <h1 id="a"> percentage and grade calculator</h1> 
+  <div class="ab">
+    <table>
+        <tr>
+            <td class="m">Maximum marks :</td>
+            <td><input type="text" id="mm"> </td>
+        </tr>
+        <tr>
+            <td class="z">Obtained marks :</td>
+            <td> <input type="text" id="om"></td>
+        </tr>
+        <tr>
+            <td><button id="aa" type="button" onclick="marks()"> submit</button></td>
+        </tr>
+        <tr>
+            <td class="p">Percentage :</td>
+            <td><input type="" id="perc"></td>
+        </tr>
+        <tr>
+            <td><button class="b" onclick="print()">print</button></td>
+        </tr>
+       
+    
+        
+   
+</table>
+</div>
+    <script>
+        function marks()
+        {
+        document.getElementById("perc").value=(document.getElementById("om").value/document.getElementById("mm").value*100)
+           
+        }
+
+        
+        
+    </script>
+</body>
+</html>
